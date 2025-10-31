@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Grtsk Peta";
+  src: url("./GrtskPeta-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Grtsk Peta", sans-serif;
+}
+
+.container {
+  border: 3px solid green;
+  background: yellow;
+  padding: 30px;
+}
+.container__item {
+  color: red;
+}
+
+body {
+  font-family: "Grtsk Peta";
+  font-weight: 700;
+}/*# sourceMappingURL=index.css.map */
