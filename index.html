@@ -1,15 +1,1275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/index.css" />
-    <title>Document</title>
+    <title>Snowboards Shop</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="container__item">store</div>
-    </div>
-    <script type="module" src="./index.js"></script>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-left">
+            <div class="header__item-location">
+              <img
+                src="assets/images/point.svg"
+                alt="point-icon"
+                class="icon"
+              />
+              <p class="header__top-text">Ваш регион доставки:</p>
+              <p class="header__top-text" aria-label="Текущий регион доставки">
+                Москва
+              </p>
+              <img
+                src="assets/images/arrow.svg"
+                alt="state__selector-icon"
+                class="icon-arrow"
+              />
+            </div>
+            <div class="header__item-nav">
+              <a
+                href="#"
+                class="header__top-text"
+                aria-label="Перейти в магазин"
+                >Магазин</a
+              >
+              <a
+                href="#"
+                class="header__top-text"
+                aria-label="Перейти в раздел помощи"
+                >Помощь</a
+              >
+              <a href="#" class="header__top-text" aria-label="Перейти в блоги"
+                >Блоги</a
+              >
+            </div>
+          </div>
+          <div class="header__top-right">
+            <div class="header__item-delivery">
+              <img
+                src="assets/images/delivery.svg"
+                alt="delivery-icon"
+                class="icon-delivery"
+              />
+              <p
+                class="header__top-text"
+                aria-label="Информация о бесплатной доставке"
+              >
+                Бесплатная доставка*
+              </p>
+            </div>
+            <div class="header__item-payment">
+              <img
+                src="assets/images/payment.svg"
+                alt="payment-icon"
+                class="icon-payment"
+              />
+              <p
+                class="header__top-text"
+                aria-label="Информация об оплате при получении"
+              >
+                Оплата при получении
+              </p>
+            </div>
+            <div class="header__item-return">
+              <img
+                src="assets/images/return.svg"
+                alt="return-icon"
+                class="icon-return"
+              />
+              <p
+                class="header__top-text"
+                aria-label="Информация о возврате товаров"
+              >
+                Возврат в течение 14 дней
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__middle">
+        <div class="header__gender">
+          <a
+            href="#"
+            class="header__gender-text"
+            aria-label="Перейти в раздел для мужчин"
+            >Мужчинам</a
+          >
+          <a
+            href="#"
+            class="header__gender-text"
+            aria-label="Перейти в раздел для женщин"
+            >Женщинам</a
+          >
+          <a
+            href="#"
+            class="header__gender-text"
+            aria-label="Перейти в раздел для детей"
+            >Детям</a
+          >
+        </div>
+        <div class="header__logo">
+          <a
+            href="#"
+            class="header__logo-link"
+            aria-label="Перейти на главную страницу"
+          >
+            <picture class="header__logo-icon">
+              <source srcset="assets/images/logo.png" type="image/png" />
+              <img src="assets/images/logo.png" alt="logo" />
+            </picture>
+          </a>
+        </div>
+        <div class="header__middle-right">
+          <button
+            id="openModal"
+            class="header__action__profile-button"
+            aria-label="Открыть форму входа"
+          >
+            <img
+              src="assets/images/profile.svg"
+              alt="profile-icon"
+              class="icon"
+            />
+            <p class="profile__text">Войти</p>
+          </button>
+          <a href="#" class="header__action" aria-label="Перейти в избранное">
+            <img src="assets/images/saved.svg" alt="save-icon" class="icon" />
+            <p class="saved__text">Избранное</p>
+          </a>
+          <a href="#" class="header__action" aria-label="Перейти в корзину">
+            <img src="assets/images/cart.svg" alt="cart-icon" class="icon" />
+            <p class="cart__text">Корзина</p>
+          </a>
+          <button
+            class="header__action__search-button"
+            aria-label="Открыть поиск"
+          >
+            <img
+              src="assets/images/search.svg"
+              alt="search-icon"
+              class="icon"
+            />
+            <p class="search__text">Поиск</p>
+          </button>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <nav class="header__bottom-nav" aria-label="Основная навигация">
+          <ul class="header__bottom-list">
+            <li>
+              <a
+                href="#"
+                class="header__bottom-text"
+                aria-label="Перейти к новинкам"
+                >Новинки</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="header__bottom-text"
+                aria-label="Перейти к сноубордам"
+                >Сноуборд</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="header__bottom-text"
+                aria-label="Перейти к лыжам"
+                >Лыжи</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="header__bottom-text"
+                aria-label="Перейти к скейтам"
+                >Скейт</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="header__bottom-text"
+                aria-label="Перейти к лонгбордам"
+                >Лонгборд</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="header__bottom-text"
+                aria-label="Перейти к вейкбордам"
+                >Вейкборд</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="header__bottom-text"
+                aria-label="Перейти к серфам"
+                >Серф</a
+              >
+            </li>
+            <li>
+              <a href="#" class="header__bottom-text" aria-label="Перейти к SUP"
+                >Sup</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="header__bottom-text"
+                aria-label="Перейти к одежде"
+                >Одежда</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="header__bottom-text"
+                aria-label="Перейти к обуви"
+                >Обувь</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="header__bottom-text"
+                aria-label="Перейти к аксессуарам"
+                >Аксессуары</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="header__bottom-text"
+                aria-label="Перейти к брендам"
+                >Бренды</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="header__bottom-sale"
+                aria-label="Перейти к распродаже"
+                >Распродажа</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="slider" aria-label="Главный слайдер">
+        <div class="slider__container">
+          <div class="slider__wrapper">
+            <div class="slider__item">
+              <picture class="slider__item-image">
+                <source
+                  srcset="assets/images/slider_item2.png"
+                  type="image/png"
+                />
+                <img
+                  src="assets/images/slider_item2.png"
+                  alt="slider-image"
+                  class="slider__item-image-mobile"
+                />
+              </picture>
+            </div>
+            <div class="slider__item active" aria-current="true">
+              <picture class="slider__item-image">
+                <source
+                  srcset="assets/images/slider_itemsmall.png"
+                  type="image/png"
+                  media="(max-width: 375px)"
+                />
+                <source
+                  srcset="assets/images/slider_item.png"
+                  type="image/png"
+                />
+                <img
+                  src="assets/images/slider_item.png"
+                  alt="slider-image"
+                  class="slider__item-image-mobile"
+                />
+              </picture>
+              <div class="sale__wrapper">
+                <h1 class="slider__item-sale">Winter sale до -70%</h1>
+              </div>
+            </div>
+            <div class="slider__item">
+              <picture class="slider__item-image">
+                <source
+                  srcset="assets/images/slider_item3.png"
+                  type="image/png"
+                />
+                <img
+                  src="assets/images/slider_item3.png"
+                  alt="slider-image"
+                  class="slider__item-image-mobile"
+                />
+              </picture>
+            </div>
+          </div>
+          <button
+            class="pagination__button pagination__button--left"
+            aria-label="Предыдущий слайд"
+          >
+            <picture class="pagination__icon pagination__icon--left">
+              <source
+                srcset="assets/images/arrowLeft.svg"
+                type="image/svg+xml"
+              />
+              <img src="assets/images/arrowLeft.svg" alt="arrow-left" />
+            </picture>
+          </button>
+          <button
+            class="pagination__button pagination__button--right"
+            aria-label="Следующий слайд"
+          >
+            <picture class="pagination__icon pagination__icon--right">
+              <source
+                srcset="assets/images/arrowRight.svg"
+                type="image/svg+xml"
+              />
+              <img src="assets/images/arrowRight.svg" alt="arrow-right" />
+            </picture>
+          </button>
+          <div class="slider__item-pagination">
+            <div class="slider__item-pagination-item active"></div>
+            <div class="slider__item-pagination-item"></div>
+            <div class="slider__item-pagination-item"></div>
+            <div class="slider__item-pagination-item"></div>
+            <div class="slider__item-pagination-item"></div>
+            `
+          </div>
+        </div>
+        <div class="brands__slider" aria-label="Логотипы брендов">
+          <div class="brands__slider-item">
+            <picture class="brands__slider-item-image">
+              <source srcset="assets/images/heart.png" type="image/png" />
+              <img src="assets/images/heart.png" alt="heart-image" />
+            </picture>
+          </div>
+          <div class="brands__slider-item">
+            <picture class="brands__slider-item-image">
+              <source srcset="assets/images/wood.png" type="image/png" />
+              <img src="assets/images/wood.png" alt="woodland-logo" />
+            </picture>
+          </div>
+          <div class="brands__slider-item">
+            <picture class="brands__slider-item-image">
+              <source srcset="assets/images/DC.png" type="image/png" />
+              <img src="assets/images/DC.png" alt="DC-logo" />
+            </picture>
+          </div>
+          <div class="brands__slider-item">
+            <picture class="brands__slider-item-image">
+              <source srcset="assets/images/quicksilver.png" type="image/png" />
+              <img src="assets/images/quicksilver.png" alt="quicksilver-logo" />
+            </picture>
+          </div>
+          <div class="brands__slider-item">
+            <picture class="brands__slider-item-image">
+              <source srcset="assets/images/billabong.png" type="image/png" />
+              <img src="assets/images/billabong.png" alt="billabong-logo" />
+            </picture>
+          </div>
+          <div class="brands__slider-item">
+            <picture class="brands__slider-item-image">
+              <source srcset="assets/images/boardriders.png" type="image/png" />
+              <img src="assets/images/boardriders.png" alt="boardriders-logo" />
+            </picture>
+          </div>
+          <div class="brands__slider-item">
+            <picture class="brands__slider-item-image">
+              <source srcset="assets/images/libtech.png" type="image/png" />
+              <img src="assets/images/libtech.png" alt="libtech-logo" />
+            </picture>
+          </div>
+          <div class="brands__slider-item">
+            <picture class="brands__slider-item-image">
+              <source srcset="assets/images/varvca.png" type="image/png" />
+              <img src="assets/images/varvca.png" alt="varvca-logo" />
+            </picture>
+          </div>
+          <div class="brands__slider-item">
+            <picture class="brands__slider-item-image">
+              <source srcset="assets/images/GNU.png" type="image/png" />
+              <img src="assets/images/GNU.png" alt="GNU-logo" />
+            </picture>
+          </div>
+          <div class="brands__slider-item">
+            <picture class="brands__slider-item-image">
+              <source srcset="assets/images/skullcandy.png" type="image/png" />
+              <img src="assets/images/skullcandy.png" alt="skullcandy-logo" />
+            </picture>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="actions__item">
+            <div class="actions__item-content">
+              <picture class="actions__item-image">
+                <source srcset="assets/images/sale1.png" type="image/png" />
+                <img src="assets/images/sale1.png" alt="action-image" />
+              </picture>
+            </div>
+            <div class="actions__item-title-wrapper">
+              <h2 class="actions__item-title">НАЗВАНИЕ АКЦИИ №1</h2>
+            </div>
+          </div>
+          <div class="actions__item">
+            <div class="actions__item-content">
+              <picture class="actions__item-image">
+                <source srcset="assets/images/sale2.png" type="image/png" />
+                <img src="assets/images/sale2.png" alt="action-image" />
+              </picture>
+            </div>
+            <div class="actions__item-title-wrapper">
+              <h2 class="actions__item-title">НАЗВАНИЕ АКЦИИ №2</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="new__products" aria-label="Новинки">
+        <div class="new__products-container">
+          <div class="new__products-title-wrapper">
+            <h3 class="new__products-title">Новинки</h3>
+          </div>
+          <div class="new__products-items">
+            <div class="new__products-item-wrapper">
+              <a
+                href="#"
+                class="new__products-item-link"
+                aria-label="Перейти на страницу товара"
+              >
+                <div class="image__wrapper">
+                  <div class="favorite__active">
+                    <picture class="favorite__active-image">
+                      <source
+                        srcset="assets/images/favActive.svg"
+                        type="image/svg+xml"
+                      />
+                      <img
+                        src="assets/images/favActive.svg"
+                        alt="favorite-active-icon"
+                      />
+                    </picture>
+                  </div>
+                  <picture class="image__wrapper-image">
+                    <source
+                      srcset="assets/images/boards1.png"
+                      type="image/png"
+                    />
+                    <img src="assets/images/boards1.png" alt="product-image" />
+                  </picture>
+                </div>
+                <div class="text__wrapper">
+                  <p class="text__wrapper-brand">LIB TECH</p>
+                  <p class="text__wrapper-description">Мужской сноуборд</p>
+                  <p class="text__wrapper-price">34392 ₽</p>
+                </div>
+              </a>
+            </div>
+            <div class="new__products-item-wrapper">
+              <a
+                href="#"
+                class="new__products-item-link"
+                aria-label="Перейти на страницу товара"
+              >
+                <div class="image__wrapper">
+                  <div class="favorite__active">
+                    <picture class="favorite__active-image">
+                      <source
+                        srcset="assets/images/favUnactive.svg"
+                        type="image/svg+xml"
+                      />
+                      <img
+                        src="assets/images/favUnactive.svg"
+                        alt="favorite-unactive-icon"
+                      />
+                    </picture>
+                  </div>
+                  <picture class="image__wrapper-image-one">
+                    <source
+                      srcset="assets/images/boards2.png"
+                      type="image/png"
+                    />
+                    <img src="assets/images/boards2.png" alt="product-image" />
+                  </picture>
+                  <div class="discount__wrapper">
+                    <p class="discount__text">-50%</p>
+                  </div>
+                </div>
+                <div class="text__wrapper">
+                  <p class="text__wrapper-brand">LIB TECH</p>
+                  <p class="text__wrapper-description">Мужской сноуборд</p>
+                  <p class="text__wrapper-price">34392 ₽</p>
+                </div>
+              </a>
+            </div>
+            <div class="new__products-item-wrapper">
+              <a
+                href="#"
+                class="new__products-item-link"
+                aria-label="Перейти на страницу товара"
+              >
+                <div class="image__wrapper">
+                  <div class="favorite__active">
+                    <picture class="favorite__active-image">
+                      <source
+                        srcset="assets/images/favUnactive.svg"
+                        type="image/svg+xml"
+                      />
+                      <img
+                        src="assets/images/favUnactive.svg"
+                        alt="favorite-unactive-icon"
+                      />
+                    </picture>
+                  </div>
+                  <picture class="image__wrapper-image-two">
+                    <source
+                      srcset="assets/images/boards3.png"
+                      type="image/png"
+                    />
+                    <img src="assets/images/boards3.png" alt="product-image" />
+                  </picture>
+                </div>
+                <div class="text__wrapper">
+                  <p class="text__wrapper-brand">LIB TECH</p>
+                  <p class="text__wrapper-description">Мужской сноуборд</p>
+                  <p class="text__wrapper-price">34392 ₽</p>
+                </div>
+              </a>
+            </div>
+            <div class="new__products-item-wrapper">
+              <a
+                href="#"
+                class="new__products-item-link"
+                aria-label="Перейти на страницу товара"
+              >
+                <div class="image__wrapper">
+                  <div class="favorite__active">
+                    <picture class="favorite__active-image">
+                      <source
+                        srcset="assets/images/favUnactive.svg"
+                        type="image/svg+xml"
+                      />
+                      <img
+                        src="assets/images/favUnactive.svg"
+                        alt="favorite-unactive-icon"
+                      />
+                    </picture>
+                  </div>
+                  <picture class="image__wrapper-image-three">
+                    <source
+                      srcset="assets/images/boards4.png"
+                      type="image/png"
+                    />
+                    <img src="assets/images/boards4.png" alt="product-image" />
+                  </picture>
+                </div>
+                <div class="text__wrapper">
+                  <p class="text__wrapper-brand">LIB TECH</p>
+                  <p class="text__wrapper-description">Мужской сноуборд</p>
+                  <p class="text__wrapper-price">34392 ₽</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="showmore__button-wrapper">
+            <button
+              class="showmore__button"
+              aria-label="Показать больше товаров"
+            >
+              Показать больше
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="dcshoes">
+        <div class="dcshoes__wrapper">
+          <div class="dcshoes__item-wrapper">
+            <picture class="dcshoes__item-image">
+              <source
+                srcset="assets/images/dcshoespicturesmall.png"
+                type="image/png"
+                media="(max-width: 375px)"
+              />
+              <source
+                srcset="assets/images/dcshoespicture.png"
+                type="image/png"
+              />
+              <img src="assets/images/dcshoespicture.png" alt="dcshoes-image" />
+            </picture>
+            <div class="dcshoes__item-content">
+              <h3 class="popular__title-wrapper-title">Название акции</h3>
+              <p class="popular__title-wrapper-description">
+                Меня не спрашивали, а надо было спросить, что означает имя
+                Заратустры именно в моих устах — в устах первого имморалиста:
+                ведь то, в чём состоит неслыханная уникальность этого перса в
+                истории, являет собою противоположность как раз этому.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular" aria-label="Популярные товары">
+        <div class="popular__container">
+          <div class="popular__title-wrapper">
+            <h4 class="popular__title-wrapper-title-dcshoes">
+              DC Shoes популярное в коллекции
+            </h4>
+          </div>
+          <div class="new__products-items">
+            <div class="new__products-item-wrapper">
+              <div class="image__wrapper">
+                <div class="favorite__active">
+                  <picture class="favorite__active-image">
+                    <source
+                      srcset="assets/images/favActive.svg"
+                      type="image/svg+xml"
+                    />
+                    <img
+                      src="assets/images/favActive.svg"
+                      alt="favorite-active-icon"
+                    />
+                  </picture>
+                </div>
+                <picture class="image__wrapper-image">
+                  <source srcset="assets/images/boards1.png" type="image/png" />
+                  <img src="assets/images/boards1.png" alt="product-image" />
+                </picture>
+                <div class="discount__wrapper">
+                  <p class="discount__text">-50%</p>
+                </div>
+              </div>
+              <div class="text__wrapper">
+                <p class="text__wrapper-brand">LIB TECH</p>
+                <p class="text__wrapper-description">Мужской сноуборд</p>
+                <p class="text__wrapper-price">34392 ₽</p>
+              </div>
+            </div>
+            <div class="new__products-item-wrapper">
+              <div class="image__wrapper">
+                <div class="favorite__active">
+                  <picture class="favorite__active-image">
+                    <source
+                      srcset="assets/images/favUnactive.svg"
+                      type="image/svg+xml"
+                    />
+                    <img
+                      src="assets/images/favUnactive.svg"
+                      alt="favorite-unactive-icon"
+                    />
+                  </picture>
+                </div>
+                <picture class="image__wrapper-image-one">
+                  <source
+                    srcset="assets/images/dcshoesitem.png"
+                    type="image/png"
+                  />
+                  <img
+                    src="assets/images/dcshoesitem.png"
+                    alt="product-image"
+                  />
+                </picture>
+                <div class="discount__wrapper">
+                  <p class="discount__text">-50%</p>
+                </div>
+              </div>
+              <div class="text__wrapper">
+                <p class="text__wrapper-brand">LIB TECH</p>
+                <p class="text__wrapper-description">Мужской сноуборд</p>
+                <p class="text__wrapper-price">34392 ₽</p>
+              </div>
+            </div>
+            <div class="new__products-item-wrapper">
+              <div class="image__wrapper">
+                <div class="favorite__active">
+                  <picture class="favorite__active-image">
+                    <source
+                      srcset="assets/images/favUnactive.svg"
+                      type="image/svg+xml"
+                    />
+                    <img
+                      src="assets/images/favUnactive.svg"
+                      alt="favorite-unactive-icon"
+                    />
+                  </picture>
+                </div>
+                <picture class="image__wrapper-image-two">
+                  <source srcset="assets/images/boards3.png" type="image/png" />
+                  <img src="assets/images/boards3.png" alt="product-image" />
+                </picture>
+              </div>
+              <div class="text__wrapper">
+                <p class="text__wrapper-brand">LIB TECH</p>
+                <p class="text__wrapper-description">Мужской сноуборд</p>
+                <p class="text__wrapper-price">34392 ₽</p>
+              </div>
+            </div>
+            <div class="new__products-item-wrapper">
+              <div class="image__wrapper">
+                <div class="favorite__active">
+                  <picture class="favorite__active-image">
+                    <source
+                      srcset="assets/images/favUnactive.svg"
+                      type="image/svg+xml"
+                    />
+                    <img
+                      src="assets/images/favUnactive.svg"
+                      alt="favorite-unactive-icon"
+                    />
+                  </picture>
+                </div>
+                <picture class="image__wrapper-image-three">
+                  <source srcset="assets/images/boards4.png" type="image/png" />
+                  <img src="assets/images/boards4.png" alt="product-image" />
+                </picture>
+              </div>
+              <div class="text__wrapper">
+                <p class="text__wrapper-brand">LIB TECH</p>
+                <p class="text__wrapper-description">Мужской сноуборд</p>
+                <p class="text__wrapper-price">34392 ₽</p>
+              </div>
+            </div>
+          </div>
+          <div class="showmore__button-wrapper">
+            <button
+              class="showmore__button"
+              aria-label="Показать больше товаров"
+            >
+              Показать больше
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="blog" aria-label="Блог">
+        <div class="blog__container">
+          <div class="blog__video">
+            <picture class="blog__video-image">
+              <source
+                srcset="assets/images/herologosmall.png"
+                type="image/png"
+                media="(max-width: 375px)"
+              />
+              <source srcset="assets/images/herologo.png" type="image/png" />
+              <img
+                loading="lazy"
+                src="assets/images/herologo.png"
+                alt="blog-video-image"
+              />
+            </picture>
+          </div>
+          <div class="blog__text">
+            <div class="blog__text-header">
+              <p class="blog__text-name">Блоги</p>
+              <p class="blog__text-name-mobile">Новые статьи</p>
+              <a
+                href="#"
+                class="blog__text-all"
+                aria-label="Перейти ко всем блогам"
+                >Все блоги</a
+              >
+            </div>
+            <div class="blog__text-content">
+              <h4 class="blog__text-title">
+                Очень преочень длинное название блога
+              </h4>
+              <div class="blog__text-description-wrapper">
+                <p class="blog__text-description">
+                  Меня не спрашивали, а надо было спросить, что означает имя
+                  Заратустры именно в моих устах — в устах первого имморалиста:
+                  ведь то, в чём состоит неслыханная уникальность этого перса в
+                  истории, являет собою противоположность как раз этому.
+                </p>
+                <p class="blog__text-description">
+                  Меня не спрашивали, а надо было спросить, что означает имя
+                  Заратустры именно в моих устах — в устах первого имморалиста:
+                  ведь то, в чём состоит неслыханная уникальность этого перса в
+                  истории, являет собою противоположность как раз этому.
+                </p>
+              </div>
+            </div>
+            <div class="blog__text-next">
+              <span class="blog__text-next-line"></span>
+              <a
+                href="#"
+                class="blog__text-next-text"
+                aria-label="Читать продолжение статьи"
+                >Читать продолжение</a
+              >
+            </div>
+          </div>
+          <div class="blog__image">
+            <picture class="blog__image-image">
+              <source srcset="assets/images/herologo2.png" type="image/png" />
+              <img
+                loading="lazy"
+                src="assets/images/herologo2.png"
+                alt="blog-image"
+              />
+            </picture>
+          </div>
+          <div class="pagination__button pagination__button--left">
+            <picture class="pagination__icon pagination__icon--left">
+              <source
+                srcset="assets/images/arrowLeft.svg"
+                type="image/svg+xml"
+              />
+              <img src="assets/images/arrowLeft.svg" alt="arrow-left" />
+            </picture>
+          </div>
+          <div class="pagination__button pagination__button--right">
+            <picture class="pagination__icon pagination__icon--right">
+              <source
+                srcset="assets/images/arrowRight.svg"
+                type="image/svg+xml"
+              />
+              <img src="assets/images/arrowRight.svg" alt="arrow-right" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="club" aria-label="Клуб лояльности и подписка">
+        <div class="club__container">
+          <div class="club__left-image">
+            <picture class="club__left-image-picture">
+              <source srcset="assets/images/logo2.svg" type="image/svg+xml" />
+              <img src="assets/images/logo2.svg" alt="club-left-image" />
+            </picture>
+            <div class="club__left-image-content">
+              <h5 class="club__left-image-title">Программа лояльности</h5>
+              <p class="club__left-image-description">
+                Зарабатывайте баллы и получайте преимущества
+              </p>
+            </div>
+            <div class="showmore__button-wrapper">
+              <button
+                class="showmore__button white-button"
+                aria-label="Вступить в клуб лояльности"
+              >
+                Вступить в клуб
+              </button>
+            </div>
+          </div>
+          <div class="club__right-image">
+            <picture class="club__right-image-picture">
+              <source srcset="assets/images/mail.svg" type="image/svg+xml" />
+              <img src="assets/images/mail.svg" alt="mail-icon" />
+            </picture>
+            <div class="club__right-image-content">
+              <h5 class="club__right-image-title">Скидка -10%</h5>
+              <p class="club__right-image-description">
+                За подписку на наши новости
+              </p>
+            </div>
+            <div class="club__right-image-input-wrapper">
+              <label class="email-label">
+                <span class="icon-left" aria-hidden="true"
+                  ><img src="assets/images/emailblack.svg" alt="email-icon"
+                /></span>
+                <input
+                  type="email-club"
+                  placeholder="Email"
+                  aria-label="Введите email для подписки"
+                />
+                <button type="submit" aria-label="Отправить">
+                  <picture class="club__right-image-button-image">
+                    <source
+                      srcset="assets/images/arrowblack.svg"
+                      type="image/svg+xml"
+                    />
+                    <img src="assets/images/arrowblack.svg" alt="arrow-icon" />
+                  </picture>
+                </button>
+              </label>
+            </div>
+            <div class="input__container-mobile">
+              <input id="email-club" type="email" placeholder="Введите имейл" />
+              <button type="submit" aria-label="Отправить">
+                <img src="assets/images/mailmobile.svg" alt="mail-icon" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__container-header">
+          <div class="footer__container-header-image-wrapper">
+            <picture class="footer__container-header-image">
+              <source
+                srcset="assets/images/logoWhiteSvg.svg"
+                type="image/svg+xml"
+              />
+              <img src="assets/images/logoWhiteSvg.svg" alt="logo" />
+            </picture>
+            <picture class="footer__container-header-image">
+              <source
+                srcset="assets/images/logoWhite2Svg.svg"
+                type="image/svg+xml"
+              />
+              <img src="assets/images/logoWhite2Svg.svg" alt="logo" />
+            </picture>
+          </div>
+          <div class="footer__container-input-wrapper">
+            <label class="email-label footer__email-label">
+              <span class="icon-left" aria-hidden="true"
+                ><img src="assets/images/emailgray.svg" alt="email-icon"
+              /></span>
+              <input
+                type="email-footer"
+                placeholder=""
+                aria-label="Введите email для подписки на рассылку"
+              />
+              <button type="submit" aria-label="Отправить">
+                <picture class="club__right-image-button-image">
+                  <source
+                    srcset="assets/images/sendWhite.svg"
+                    type="image/svg+xml"
+                  />
+                  <img src="assets/images/sendWhite.svg" alt="send-icon" />
+                </picture>
+              </button>
+            </label>
+          </div>
+          <div class="footer__container-text-wrapper">
+            <p class="footer__container-text-wrapper-text">
+              Подпишись на рассылку и получи
+              <span class="footer__container-text-wrapper-text-discount"
+                >-10%</span
+              >скидку
+            </p>
+          </div>
+        </div>
+        <div class="footer__container-main">
+          <div class="footer__container-main-item download">
+            <p class="footer__container-main-item-title">
+              Доступ к ранним релизам в приложении
+            </p>
+            <div class="footer__container-main-item-image-wrapper">
+              <div class="footer__container-main-item-image-wrapper-item">
+                <picture class="footer__container-main-item-image">
+                  <source
+                    srcset="assets/images/appstore.png"
+                    type="image/png"
+                  />
+                  <img src="assets/images/appstore.png" alt="appstore-image" />
+                </picture>
+                <picture class="footer__container-main-item-image">
+                  <source
+                    srcset="assets/images/googleplay.png"
+                    type="image/png"
+                  />
+                  <img
+                    src="assets/images/googleplay.png"
+                    alt="googleplay-image"
+                  />
+                </picture>
+              </div>
+              <picture class="footer__container-main-item-qrcode">
+                <source
+                  srcset="assets/images/qrcode.svg"
+                  type="image/svg+xml"
+                />
+                <img src="assets/images/qrcode.svg" alt="qrcode-image" />
+              </picture>
+            </div>
+          </div>
+          <div class="footer__container-main-item contacts">
+            <p class="footer__container-main-item-title">Контакты</p>
+            <div class="phonenumber-wrapper">
+              <picture class="phonenumber-wrapper-image">
+                <source srcset="assets/images/phone.svg" type="image/svg+xml" />
+                <img src="assets/images/phone.svg" alt="phone-icon" />
+              </picture>
+              <div class="phonenumber-wrapper-text-wrapper">
+                <p class="phonenumber-number">8 (800) 511-74-68</p>
+                <p class="phonenumber-description">
+                  Бесплатная горячая линия Ежедневно с 9 до 21
+                </p>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <picture class="email-wrapper-image">
+                <source srcset="assets/images/mail.svg" type="image/svg+xml" />
+                <img src="assets/images/mail.svg" alt="email-icon" />
+              </picture>
+              <div class="email-wrapper-text-wrapper">
+                <p class="email-wrapper-title">Контактный Email</p>
+                <p class="email-wrapper-description">info@brd.ru</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__container-main-item help">
+            <p class="footer__container-main-item-title">Помощь</p>
+            <ul class="footer__container-main-item-list">
+              <li>
+                <a
+                  href="#"
+                  class="footer__container-main-item-list-item"
+                  aria-label="Перейти к доставке"
+                  >Доставка</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer__container-main-item-list-item"
+                  aria-label="Перейти к оплате"
+                  >Оплата</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer__container-main-item-list-item"
+                  aria-label="Перейти к возврату"
+                  >Возврат</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer__container-main-item-list-item"
+                  aria-label="Перейти к отзывам"
+                  >Отзывы(2290)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer__container-main-item-list-item"
+                  aria-label="Перейти к акциям и скидкам"
+                  >Акции и скидки</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__container-main-item about">
+            <p class="footer__container-main-item-title">Компания</p>
+            <ul class="footer__container-main-item-list">
+              <li>
+                <a
+                  href="#"
+                  class="footer__container-main-item-list-item"
+                  aria-label="Перейти к контактам"
+                  >Контакты</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer__container-main-item-list-item"
+                  aria-label="Перейти к boardriders"
+                  >О boardriders</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer__container-main-item-list-item"
+                  aria-label="Перейти к вакансиям"
+                  >Вакансии</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer__container-main-item-list-item"
+                  aria-label="Перейти к публичной оферте"
+                  >Публичная оферта</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__container-main-item boardriders">
+            <p class="footer__container-main-item-title">Boardriders Inc.</p>
+            <ul class="footer__container-main-item-list">
+              <li>
+                <a
+                  href="#"
+                  class="footer__container-main-item-list-item"
+                  aria-label="Перейти к франчайзингу"
+                  >Франчайзинг</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer__container-main-item-list-item"
+                  aria-label="Перейти к Quicksilver"
+                  >Quicksilver</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer__container-main-item-list-item"
+                  aria-label="Перейти к Roxy"
+                  >Roxy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer__container-main-item-list-item"
+                  aria-label="Перейти к DC Shoes"
+                  >DC Shoes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer__container-main-item-list-item"
+                  aria-label="Перейти к Boardriders Club"
+                  >Boardriders Club</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__container-footer">
+          <div class="footer__container-footer-items">
+            <a
+              href="#"
+              class="footer__container-footer-items-image"
+              aria-label="Перейти к Twitter"
+            >
+              <picture class="footer__container-footer-items-image">
+                <source
+                  srcset="assets/images/twitter - FontAwesome.svg"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/twitter - FontAwesome.svg"
+                  alt="twitter-icon"
+                />
+              </picture>
+            </a>
+            <a
+              href="#"
+              class="footer__container-footer-items-image"
+              aria-label="Перейти к Facebook"
+            >
+              <picture class="footer__container-footer-items-image">
+                <source
+                  srcset="assets/images/facebook-official - FontAwesome.svg"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/facebook-official - FontAwesome.svg"
+                  alt="facebook-icon"
+                />
+              </picture>
+            </a>
+            <a
+              href="#"
+              class="footer__container-footer-items-image"
+              aria-label="Перейти к Twitch"
+            >
+              <picture class="footer__container-footer-items-image">
+                <source
+                  srcset="assets/images/twitch - FontAwesome.svg"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/twitch - FontAwesome.svg"
+                  alt="twitch-icon"
+                />
+              </picture>
+            </a>
+            <a
+              href="#"
+              class="footer__container-footer-items-image"
+              aria-label="Перейти к YouTube"
+            >
+              <picture class="footer__container-footer-items-image">
+                <source
+                  srcset="assets/images/youtube-play - FontAwesome.svg"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/youtube-play - FontAwesome.svg"
+                  alt="youtube-icon"
+                />
+              </picture>
+            </a>
+            <a
+              href="#"
+              class="footer__container-footer-items-image"
+              aria-label="Перейти к Instagram"
+            >
+              <picture class="footer__container-footer-items-image">
+                <source
+                  srcset="assets/images/instagram - FontAwesome.svg"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/instagram - FontAwesome.svg"
+                  alt="instagram-icon"
+                />
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- <div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitleLogin" aria-describedby="modalDescLogin">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitleLogin" aria-describedby="modalDescLogin">
+        
+          <section class="modal__section modal__section--login">
+            <h2 id="modalTitleLogin" class="modal__title">Вход</h2>
+            <form  aria-label="Форма входа">
+              <label for="login-phone-email">Номер телефона или email</label>
+              <input type="text" id="login-phone-email" name="login-phone-email" autocomplete="username" aria-required="true" />
+    
+              <label for="login-password">Пароль</label>
+              <input type="password" id="login-password" name="login-password" autocomplete="current-password" aria-required="true" />
+    
+              <div class="login-options">
+                <label class="checkbox-group">
+                  <input type="checkbox" id="remember-me" name="remember-me" />
+                  Запомнить меня
+                </label>
+                <span class="forgot-password" tabindex="0" role="button" aria-label="Забыли пароль?">Забыли пароль?</span>
+              </div>
+    
+              <button type="submit" class="btn btn--login" aria-label="Войти в аккаунт">Войти</button>
+            </form>
+          </section>
+    
+          <section class="modal__section modal__section--register">
+            <button class="modal-close" aria-label="Закрыть модальное окно" id="modalCloseBtn">×</button>
+            <h2 class="modal__title">Регистрация</h2>
+            <form  aria-label="Форма регистрации">
+              <label for="reg-name">Имя*</label>
+              <input type="text" id="reg-name" name="reg-name" required aria-required="true" />
+    
+              <label for="reg-email">Email*</label>
+              <input type="email" id="reg-email" name="reg-email" required aria-required="true" />
+    
+              <label for="reg-phone">Номер телефона*</label>
+              <input type="tel" id="reg-phone" name="reg-phone" required aria-required="true" />
+    
+              <label class="checkbox-group" for="agree-rules">
+                <input type="checkbox" id="agree-rules" name="agree-rules" required aria-required="true" />
+                Вы соглашаетесь с правилами
+              </label>
+    
+              <button type="submit" class="btn btn--register" aria-label="Зарегистрировать аккаунт">Зарегистрироваться</button>
+            </form>
+          </section>
+        </div>
+    </div> -->
+    <script src="index.js"></script>
   </body>
 </html>
