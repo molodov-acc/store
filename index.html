@@ -1223,53 +1223,125 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitleLogin" aria-describedby="modalDescLogin">
-        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitleLogin" aria-describedby="modalDescLogin">
-        
-          <section class="modal__section modal__section--login">
-            <h2 id="modalTitleLogin" class="modal__title">Вход</h2>
-            <form  aria-label="Форма входа">
-              <label for="login-phone-email">Номер телефона или email</label>
-              <input type="text" id="login-phone-email" name="login-phone-email" autocomplete="username" aria-required="true" />
-    
-              <label for="login-password">Пароль</label>
-              <input type="password" id="login-password" name="login-password" autocomplete="current-password" aria-required="true" />
-    
-              <div class="login-options">
-                <label class="checkbox-group">
-                  <input type="checkbox" id="remember-me" name="remember-me" />
-                  Запомнить меня
-                </label>
-                <span class="forgot-password" tabindex="0" role="button" aria-label="Забыли пароль?">Забыли пароль?</span>
-              </div>
-    
-              <button type="submit" class="btn btn--login" aria-label="Войти в аккаунт">Войти</button>
-            </form>
-          </section>
-    
-          <section class="modal__section modal__section--register">
-            <button class="modal-close" aria-label="Закрыть модальное окно" id="modalCloseBtn">×</button>
-            <h2 class="modal__title">Регистрация</h2>
-            <form  aria-label="Форма регистрации">
-              <label for="reg-name">Имя*</label>
-              <input type="text" id="reg-name" name="reg-name" required aria-required="true" />
-    
-              <label for="reg-email">Email*</label>
-              <input type="email" id="reg-email" name="reg-email" required aria-required="true" />
-    
-              <label for="reg-phone">Номер телефона*</label>
-              <input type="tel" id="reg-phone" name="reg-phone" required aria-required="true" />
-    
-              <label class="checkbox-group" for="agree-rules">
-                <input type="checkbox" id="agree-rules" name="agree-rules" required aria-required="true" />
-                Вы соглашаетесь с правилами
+    <div
+      class="modal-overlay"
+      id="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitleLogin"
+      aria-describedby="modalDescLogin"
+    >
+      <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitleLogin"
+        aria-describedby="modalDescLogin"
+      >
+        <section class="modal__section modal__section--login">
+          <h2 id="modalTitleLogin" class="modal__title">Вход</h2>
+          <form aria-label="Форма входа">
+            <label for="login-phone-email">Номер телефона или email</label>
+            <input
+              type="text"
+              id="login-phone-email"
+              name="login-phone-email"
+              autocomplete="username"
+              aria-required="true"
+            />
+
+            <label for="login-password">Пароль</label>
+            <input
+              type="password"
+              id="login-password"
+              name="login-password"
+              autocomplete="current-password"
+              aria-required="true"
+            />
+
+            <div class="login-options">
+              <label class="checkbox-group">
+                <input type="checkbox" id="remember-me" name="remember-me" />
+                Запомнить меня
               </label>
-    
-              <button type="submit" class="btn btn--register" aria-label="Зарегистрировать аккаунт">Зарегистрироваться</button>
-            </form>
-          </section>
-        </div>
-    </div> -->
+              <span
+                class="forgot-password"
+                tabindex="0"
+                role="button"
+                aria-label="Забыли пароль?"
+                >Забыли пароль?</span
+              >
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn--login"
+              aria-label="Войти в аккаунт"
+            >
+              Войти
+            </button>
+          </form>
+        </section>
+
+        <section class="modal__section modal__section--register">
+          <button
+            class="modal-close"
+            aria-label="Закрыть модальное окно"
+            id="modalCloseBtn"
+          >
+            ×
+          </button>
+          <h2 class="modal__title">Регистрация</h2>
+          <form aria-label="Форма регистрации">
+            <label for="reg-name">Имя*</label>
+            <input
+              type="text"
+              id="reg-name"
+              name="reg-name"
+              required
+              aria-required="true"
+            />
+
+            <label for="reg-email">Email*</label>
+            <input
+              type="email"
+              id="reg-email"
+              name="reg-email"
+              required
+              aria-required="true"
+            />
+
+            <label for="reg-phone">Номер телефона*</label>
+            <input
+              type="tel"
+              id="reg-phone"
+              name="reg-phone"
+              required
+              aria-required="true"
+            />
+
+            <label class="checkbox-group" for="agree-rules">
+              <input
+                type="checkbox"
+                id="agree-rules"
+                name="agree-rules"
+                required
+                aria-required="true"
+              />
+              Вы соглашаетесь с правилами
+            </label>
+
+            <button
+              type="submit"
+              class="btn btn--register"
+              aria-label="Зарегистрировать аккаунт"
+            >
+              Зарегистрироваться
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
